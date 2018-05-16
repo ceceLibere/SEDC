@@ -1,0 +1,13 @@
+﻿<ul>
+    <li>@Html.ActionLink("Students register", "List", "Students")</li>
+    <li>@Html.ActionLink("Add student", "Create", "Students")</li>
+</ul>
+
+@if (User.Identity.IsAuthenticated)
+{
+    <p>Welcome @User.Identity.Name [@Html.ActionLink("Log out", "LogOut", "Users")]</p>
+}
+else
+{
+    <p>Please @Html.ActionLink("Log in", "LogIn", "Users").</p>
+}

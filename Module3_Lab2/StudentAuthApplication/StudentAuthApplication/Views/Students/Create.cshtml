@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Create Student";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create Student</h1>
+
+@using (Html.BeginForm())
+{
+    <div>
+        Student: @Html.TextBox("fullName")
+        @Html.ValidationMessage("fullName", "Student name is required")
+    </div>
+    <div><input type="submit" value="Create" /></div>
+}
+

@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Students List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section myscripts
+{
+    <script type="text/javascript">
+        // alert("My scripts section!");
+    </script>
+}
+
+<h1>Students List</h1>
+
+<table>
+    <tr>
+        <th>Student Id</th>
+        <th>Student Name</th>
+        <th>Student Details</th>
+    </tr>
+
+    @foreach (var student in ViewBag.Students)
+    {
+        <tr>
+            <td>@student.Key</td>
+            <td>@student.Value</td>
+            <td><a href="~/Students/Details/@student.Key">Details</a></td>
+        </tr>
+    }
+
+</table>
+
+
+

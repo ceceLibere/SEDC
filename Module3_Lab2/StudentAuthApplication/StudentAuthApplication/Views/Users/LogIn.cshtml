@@ -1,0 +1,16 @@
+﻿@using StudentAuthApplication.Extensions
+
+@{
+    ViewBag.Title = "LogIn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>LogIn</h1>
+
+@using (Html.BeginForm())
+{
+    <div>UserName: <input type="text" name="username" /></div>
+    <div>Password: @Html.MyColoredPasswordTextBox("red", "password")</div>
+    <div><input type="submit" value="LogiIn" /></div>
+}
+

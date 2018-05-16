@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Master layout</title>
+    <link href="~/Content/style.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        @Html.Partial("_Header")
+    </header>
+    <div id="main">
+        @RenderBody()
+    </div>
+    <footer>
+        Students Register 2018 All rights reserved
+    </footer>
+    @RenderSection("myscripts", false)
+</body>
+</html>
