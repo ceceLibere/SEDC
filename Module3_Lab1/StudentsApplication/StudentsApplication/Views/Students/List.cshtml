@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+<table>
+    <tr>
+        <th>Student Id</th>
+        <th>Student Name</th>
+        <th>Student Details</th>
+    </tr>
+        
+    @foreach (var student in ViewBag.Students)
+    {
+        <tr>
+            <td>@student.Key</td>
+            <td>@student.Value</td>
+            <td><a href="~/Students/Details/@student.Key">Details</a></td>
+        </tr>
+    }
+</table>
