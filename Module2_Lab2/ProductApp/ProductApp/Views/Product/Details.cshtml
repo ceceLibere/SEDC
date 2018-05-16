@@ -1,0 +1,11 @@
+﻿@using ProductApp.Models
+@model dynamic
+
+@{
+    ViewBag.Title = "Product details";
+    var product = (Product) ViewBag.Product;
+}
+
+<h2>@product.Name</h2>
+<h3>@product.Description</h3>
+<h3>Quantity: @product.Quantity</h3>

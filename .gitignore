@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Module2_Lab2/ProductApp/packages
+/Module2_Lab2/ProductApp/ProductApp/bin
+/Module2_Lab2/ProductApp/ProductApp/obj/Debug
+/Module2_Lab2/ProductApp/.vs
